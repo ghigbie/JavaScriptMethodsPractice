@@ -11,3 +11,24 @@ var obj = {
 };
 obj.add(20,3); //this looks exactly like the console.log function
 console.log(obj.add(10.5));
+
+
+function speak(){
+	return "Woof!";
+}
+
+function speak(){
+	return "Meow!";
+}
+//name-space collision 
+
+var dogSpace = {};
+dogSpace.speak = function(){
+	return "WOOF!";
+}
+
+var catSpace = {};
+catSpace.speak = function(){
+	return "MEOW!";
+}
+
